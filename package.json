@@ -1,0 +1,39 @@
+{
+  "name": "paypay-cli",
+  "version": "1.0.0",
+  "description": "PayPay決済のコマンドラインツール",
+  "main": "dist/paypay-cli.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/paypay-cli.js",
+    "dev": "ts-node paypay-cli.ts",
+    "sbps": "ts-node sbps-direct.ts",
+    "sbps:test": "ts-node sbps-direct.ts payment.json",
+    "clean": "rm -rf dist"
+  },
+  "bin": {
+    "paypay-cli": "dist/paypay-cli.js"
+  },
+  "keywords": [
+    "paypay",
+    "payment",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "open": "^10.2.0"
+  },
+  "devDependencies": {
+    "@types/form-data": "^2.5.0",
+    "@types/node": "^20.0.0",
+    "@types/open": "^6.2.1",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
