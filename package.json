@@ -9,6 +9,8 @@
     "dev": "ts-node paypay-cli.ts",
     "sbps": "ts-node sbps-direct.ts",
     "sbps:test": "ts-node sbps-direct.ts payment.json",
+    "sbps:sales": "ts-node sbps-sales.ts",
+    "sbps:sales:test": "ts-node sbps-sales.ts sales_payment.json",
     "clean": "rm -rf dist"
   },
   "bin": {
@@ -20,14 +22,16 @@
     "cli"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",
     "form-data": "^4.0.0",
+    "iconv-lite": "^0.7.1",
     "open": "^10.2.0"
   },
   "devDependencies": {
     "@types/form-data": "^2.5.0",
+    "@types/iconv-lite": "^0.0.1",
     "@types/node": "^20.0.0",
     "@types/open": "^6.2.1",
     "ts-node": "^10.9.0",
