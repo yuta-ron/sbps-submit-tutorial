@@ -8,6 +8,7 @@ dist/
 .env
 .env.local
 .env.*.local
+.env.sbps
 .envrc
 
 # IDE
@@ -43,3 +44,5 @@ coverage/
 # Temporary files
 tmp/
 temp/
+
+*.json
